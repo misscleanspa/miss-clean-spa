@@ -1,0 +1,11 @@
+[build]
+  command = "bun run build --preset netlify"
+  publish = "dist"
+
+[[edge_functions]]
+  function = "ssr"
+  path = "/*"
+
+[build.environment]
+  NODE_VERSION = "20.18.3"
+  YARN_VERSION = "1.22.19"
